@@ -1,0 +1,113 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.example</groupId>
+  <artifactId>ML-OPS-API</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>ML-OPS-API Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+
+      <groupId>org.glassfish.jersey.containers</groupId>
+
+      <artifactId>jersey-container-jetty-http</artifactId>
+
+      <version>3.1.6</version>
+
+    </dependency>
+
+    <dependency>
+
+      <groupId>org.glassfish.jersey.core</groupId>
+
+      <artifactId>jersey-server</artifactId>
+
+      <version>3.1.6</version>
+
+    </dependency>
+
+    <dependency>
+
+      <groupId>org.glassfish.jersey.media</groupId>
+
+      <artifactId>jersey-media-json-jackson</artifactId>
+
+      <version>3.1.6</version>
+
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-jetty-http</artifactId>
+      <version>3.1.6</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-server</artifactId>
+      <version>3.1.6</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.jersey.media</groupId>
+      <artifactId>jersey-media-json-jackson</artifactId>
+      <version>3.1.6</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.jersey.inject</groupId>
+      <artifactId>jersey-hk2</artifactId>
+      <version>3.1.6</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.hk2</groupId>
+      <artifactId>hk2-locator</artifactId>
+      <version>3.0.5</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.hk2</groupId>
+      <artifactId>hk2-utils</artifactId>
+      <version>3.0.5</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-grizzly2-http</artifactId>
+      <version>3.1.6</version>
+    </dependency>
+
+  </dependencies>
+  <build>
+    <plugins>
+
+      <plugin>
+
+        <groupId>org.codehaus.mojo</groupId>
+
+        <artifactId>exec-maven-plugin</artifactId>
+
+        <version>3.1.0</version>
+
+        <configuration>
+
+          <mainClass>com.mlops.Main</mainClass>
+
+        </configuration>
+
+      </plugin>
+
+    </plugins>
+    <finalName>ML-OPS-API</finalName>
+  </build>
+</project>
